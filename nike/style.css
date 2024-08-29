@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1e2227;
+}
+
+.container {
+    height: 100vh;
+}
+
+header {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    width: 90%;
+    margin: auto;
+}
+
+
+.icons {
+    display: flex;
+    gap: 1.2rem;
+
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.icons a span {
+    font-size: 2.625rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 88vh;
+
+
+}
+
+.row1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding: 0 7rem;
+}
+
+.row1 h1 {
+    font-weight: bold;
+}
+
+#low {
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+.buttons button {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border: none;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+.row1 p {
+    font-size: 20px;
+}
+
+.row2 {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.row2 h1{
+z-index: -1;
+color: white;
+font-size: 150px;
+opacity: 0.4;
+position: absolute;
+top: 90px;
+left: 50px;
+}
+
+
+.bigimage img {
+    width: 700px;
+    rotate: -20deg;
+}
+
+.bigimage {
+    transition: 0.5s transform;
+
+}
+
+.lows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    bottom: 60px;
+    gap: 100px;
+}
+
+.lows img {
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s transform;
+    rotate: -20deg;
+}
+
+.low1 {
+    background-color: bisque;
+    height: 120px;
+    display: flex;
+    align-items: center;
+
+}
+
+.low2 {
+    background-color: azure;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.low3 {
+    background-color: coral;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.bigimage:hover {
+    transform: rotate(20deg);
+}
+
+.low1 img:hover {
+    transform: rotate(20deg);
+}
+
+.low2 img:hover {
+    transform: rotate(20deg);
+}
+
+.low3 img:hover {
+    transform: rotate(20deg);
+}
